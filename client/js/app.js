@@ -1,5 +1,5 @@
 function getSessionList(success, error) {
-  var soql = "SELECT sid16__Session__r.Id, sid16__Session__r.Name FROM sid16__Session_Speaker__c";
+  var soql = "SELECT sid16__Session__r.Id, sid16__Session__r.Name, sid16__Session__r.Session_Date__c, sid16__Speaker__r.First_Name__c, sid16__Speaker__r.Last_Name__c FROM sid16__Session_Speaker__c";
   force.query(soql, success, error);
 }
 
